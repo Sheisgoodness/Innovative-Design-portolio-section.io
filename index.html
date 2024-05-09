@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Innovative Design | Portfolio - Section</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-------- Portfolio Section -------->
+<div class="portfolio-container">
+    
+    <div class="portfolio-card" onclick="openLightbox('img1.jpg');">
+        <img src="img1.jpg" alt="Project Image 1">
+        <div class="card-content">
+            <h3>Responsive Web Design</h3>
+            <p>A comprehensive layout for a modern business website, designed to be mobile-friendly and fully responsive. Tools used include HTML5, CSS3, and JavaScript.</p>
+            <button onclick="window.open('https://example.com', '_blank')">View Project</button>
+        </div>
+    </div>
+    
+    <div class="portfolio-card" onclick="openLightbox('img2.jpg');">
+        <img src="img2.jpg" alt="Project Image 2">
+        <div class="card-content">
+            <h3>E-commerce Platform</h3>
+            <p>Developed an e-commerce website with a custom shopping cart, integrating secure payment gateways. Implemented with PHP, MySQL, and Ajax.</p>
+            <button onclick="window.open('https://example.com/project2', '_blank')">View Project</button>
+        </div>
+    </div>
+   
+    <div class="portfolio-card" onclick="openLightbox('img3.jpg');">
+        <img src="img3.jpg" alt="Project Image 3">
+        <div class="card-content">
+            <h3>Interactive Data Visualization</h3>
+            <p>Created interactive charts and graphs for data analysis using D3.js. This project involved working with large datasets and optimizing front-end performance.</p>
+            <button onclick="window.open('https://example.com/project3', '_blank')">View Project</button>
+        </div>
+    </div>
+    
+    <div class="portfolio-card" onclick="openLightbox('img4.jpg');">
+        <img src="img4.jpg" alt="Project Image 4">
+        <div class="card-content">
+            <h3>Mobile App Development</h3>
+            <p>Designed and developed a mobile application for iOS and Android using React Native. The app features user authentication, real-time data, and cloud sync.</p>
+            <button onclick="window.open('https://example.com/project4', '_blank')">View Project</button>
+        </div>
+    </div>
+</div>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox();">
+    <img id="lightbox-img" src="">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
